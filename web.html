@@ -2,124 +2,109 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
 <!---ognav style--->
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-
+/*navigation bar*/
 .topnav {
   overflow: hidden;
   background-color: white;
-  padding: 14px 14px 14px 16px;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 20px 30px 10px 10px;
 }
-
-.topnav a {
-  float: right;
-  color: ##7A99AC;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 12px;
-}
-.topnav b {
-  float: left;
-  color: ##58798d;
-  text-align: left;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 28px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #58798d;
-  color: white;
-}
-
-.topnav-right {
-  float: right;
-}
-b {
+.topnav-left a {
   font-size: 24px;
   font-style: normal;
   color: #58798d;
   text-align: left;
+  float: left;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-size: 28px;
 }
-img{
-  padding-top: 123px
-}
-/*dropbutton*/
-.dropbtn {
+.topnav-right a {
   float: right;
-  color: ##7A99AC;
-  text-align: center;
+  color: #7A99AC;
+  background-color: translucent;
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 10px
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   font-size: 12px;
+  padding: 5px 5px 5px 5px;
 }
-
-.dropdown {
-  float:right;
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  overflow: auto;
-
-}
-
-.dropdown-content a {
+.topnav-right a:hover {
+  background-color: #ddd;
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-
+  padding: 5px 5px 5px 5px;
+}
+.topnav a.active {
+  background-color: #58798d;
+  color: white;
+  padding: 5px 5px 5px 5px;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+/*scroll pics*/
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: : auto;
+  margin-bottom: auto;
+}
+div.scrollpics {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
 
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+div.scrollpics img {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+div.scrollpics img:hover {
+  background-color: white;
+}
+/*footer*/
+footer {
+  text-align: left;
+  color: #58798d;
+  font-size:12px;
+}
 </style>
     <title>Futurist Designer</title>
   </head>
   <body>
 <!--ognav-->
-<div class="topnav" "dropdown">
-    <b href="amandamane.com"><b>Amanda Mane<br>Production Design Artist</b></b>
-    <div class="dropdown">
-    <a class="dropbtn">CONTACT</a>
-    <div class="dropdown-content">
-      <a href="mailto:amanda.grayce@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/srimahoang/">LinkedIn</a>
-      <a href="https://calendar.google.com/calendar/embed?src=4ihnd32goepr3q4emco5htderc%40group.calendar.google.com&ctz=America%2FLos_Angeles">Calendar</a>
-        </div>
-      </div>
+<div class="topnav">
+  <div class="topnav-left">
+    <a href="index.html"><b>Amanda Mane<br>Production Design Artist</b>
+  </div>
+<!--right side nav bar-->
+    <div class="topnav-right">
     <a href="print.html">PRINT</a>
     <a class="active" href="web.html">WEB</a>
     <a href="brands.html">BRANDS</a>
-    <a href="bio.html">BIO</a>
+    <a href="bio.html">BIO+CONTACT</a>
     <a href="index.html">PORTFOLIO</a>
   </div>
 </div>
+  <img src="images/web.png" style="width:100%">
 
-<img src="images/web.png" style="width:100%">
+<footer>
+  <p><i>© 2020 Amanda Mane All Rights Reserved </i></p>
+</footer>
+
   </body>
 </html>
